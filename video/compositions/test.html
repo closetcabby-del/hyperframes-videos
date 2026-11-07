@@ -1,0 +1,21 @@
+<template>
+<style>
+#root{position:absolute;inset:0;background:#10182b;color:#fff;font-family:Inter,sans-serif}
+#copy{position:absolute;left:220px;top:270px;width:1480px}
+#label{font-size:32px;letter-spacing:8px;color:#67e8f9;margin:0 0 35px}
+h1{font-size:100px;line-height:1.15;margin:0 0 35px;font-weight:900}
+#details{font-size:36px;color:#cbd5e1;margin:0}
+#track{position:absolute;left:220px;top:760px;width:1480px;height:12px;background:#334155;overflow:hidden}
+#progress{width:100%;height:100%;background:#67e8f9;transform-origin:left center}
+</style>
+<div id="root" data-composition-id="test" data-width="1920" data-height="1080">
+<div id="copy"><p id="label">HEYGEN HYPERFRAMES</p><h1>Rendered in the cloud.</h1><p id="details">1920 × 1080 · 30 fps · 5 seconds</p></div>
+<div id="track"><div id="progress"></div></div>
+</div>
+<script>
+const tl=gsap.timeline({paused:true});
+tl.fromTo('#copy',{opacity:0,y:36},{opacity:1,y:0,duration:0.7,ease:'power2.out'},0);
+tl.fromTo('#progress',{scaleX:0},{scaleX:1,duration:4.9666667,ease:'none'},0);
+window.__timelines=window.__timelines||{};window.__timelines.test=tl;
+</script>
+</template>

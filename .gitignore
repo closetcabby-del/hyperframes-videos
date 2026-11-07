@@ -1,0 +1,4 @@
+node_modules/
+.cache/
+video/.hyperframes/
+video/.hyperframes-preview*

@@ -1,0 +1,25 @@
+{
+  "name": "hyperframes-cloud",
+  "version": "1.0.0",
+  "description": "HeyGen HyperFrames cloud rendering and verified 1080p smoke test",
+  "main": "index.js",
+  "scripts": {
+    "doctor": "./scripts/hf.sh doctor --json",
+    "check": "./scripts/hf.sh check video --json",
+    "render": "./scripts/render.sh",
+    "verify": "node scripts/verify.mjs renders/test-1080p.mp4",
+    "preview": "./scripts/hf.sh preview video --background"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "gsap": "3.15.1",
+    "hyperframes": "0.9.20"
+  },
+  "private": true,
+  "engines": {
+    "node": ">=22"
+  }
+}

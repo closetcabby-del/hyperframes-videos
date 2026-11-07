@@ -1,0 +1,12 @@
+hyperframes-cloud@1.0.0 /workspace/hyperframes-cloud
+├── @emnapi/runtime@1.11.3 extraneous
+├── @img/sharp-wasm32@0.35.5 extraneous
+├── gsap@3.15.1
+├── hyperframes@0.9.20
+└── tslib@2.9.1 extraneous
+
+v24.22.1
+11.9.0
+Chromium 156.0.8078.79 built on Debian GNU/Linux 13 (trixie)
+ffmpeg version 7.1.5-0+deb13u1 Copyright (c) 2000-2026 the FFmpeg developers
+ffprobe version 7.1.5-0+deb13u1 Copyright (c) 2007-2026 the FFmpeg developers

@@ -1,0 +1,16 @@
+{
+  "ok": true,
+  "file": "renders/test-1080p.mp4",
+  "width": 1920,
+  "height": 1080,
+  "duration": 5,
+  "fps": "30/1",
+  "frames": 150,
+  "codec": "h264",
+  "pixelFormat": "yuv420p",
+  "profile": "High",
+  "fullDecode": "passed",
+  "fastStart": true,
+  "bytes": 130259,
+  "sha256": "66916e196b1b8b6dbf7fd0f106e1c9a3b4f90e0933315355e17c9ea7da8a58e3"
+}

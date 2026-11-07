@@ -1,0 +1,42 @@
+name: Render HyperFrames video
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'video/**'
+      - 'scripts/**'
+      - 'package*.json'
+      - '.github/workflows/render.yml'
+permissions:
+  contents: read
+jobs:
+  render:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: npm
+      - name: Install FFmpeg and Chrome
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y ffmpeg
+          command -v google-chrome
+      - name: Install and verify dependencies
+        run: bash scripts/setup.sh
+      - name: Render and validate 5-second 1080p MP4
+        run: npm run render
+      - name: Verify browser playback
+        run: HYPERFRAMES_BROWSER_PATH="$(command -v google-chrome)" node scripts/playback.cjs
+      - name: Upload finished video and evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: hyperframes-video-and-evidence
+          path: |
+            renders/test-1080p.mp4
+            evidence/
+          if-no-files-found: error
+          retention-days: 30

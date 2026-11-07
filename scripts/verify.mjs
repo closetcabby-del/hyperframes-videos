@@ -1,0 +1,14 @@
+import {execFileSync} from 'node:child_process';
+import {readFileSync,writeFileSync} from 'node:fs';
+import {createHash} from 'node:crypto';
+const file=process.argv[2]||'renders/test-1080p.mp4';
+const probe=JSON.parse(execFileSync('ffprobe',['-v','error','-count_frames','-show_streams','-show_format','-of','json',file],{encoding:'utf8'}));
+const v=probe.streams.find(s=>s.codec_type==='video');
+if(!v||v.width!==1920||v.height!==1080||v.codec_name!=='h264'||v.pix_fmt!=='yuv420p'||v.nb_read_frames!=='150'||Math.abs(Number(probe.format.duration)-5)>0.04) throw Error('Video validation failed: '+JSON.stringify(probe));
+execFileSync('ffmpeg',['-v','error','-xerror','-i',file,'-f','null','-'],{stdio:['ignore','ignore','pipe']});
+const bytes=readFileSync(file);
+const moov=bytes.indexOf(Buffer.from('moov')),mdat=bytes.indexOf(Buffer.from('mdat'));
+if(moov<0||mdat<0||moov>mdat) throw Error('MP4 is not optimized for progressive playback');
+const result={ok:true,file,width:v.width,height:v.height,duration:Number(probe.format.duration),fps:v.avg_frame_rate,frames:Number(v.nb_read_frames),codec:v.codec_name,pixelFormat:v.pix_fmt,profile:v.profile,fullDecode:'passed',fastStart:true,bytes:bytes.length,sha256:createHash('sha256').update(bytes).digest('hex'),probe};
+writeFileSync('evidence/validation.json',JSON.stringify(result,null,2)+'\n');
+console.log(JSON.stringify({...result,probe:undefined},null,2));
