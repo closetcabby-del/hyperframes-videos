@@ -1,0 +1,16 @@
+{
+  "ok": true,
+  "file": "renders/jeff-electric-ad-flickering.mp4",
+  "width": 1080,
+  "height": 1920,
+  "duration": 15,
+  "fps": "30/1",
+  "frames": 450,
+  "codec": "h264",
+  "pixelFormat": "yuv420p",
+  "profile": "High",
+  "fullDecode": "passed",
+  "fastStart": true,
+  "bytes": 556843,
+  "sha256": "7196e46dc0b7fae519e0ab5a1ec9fd95eb193e88d45ea9ae12a0821b320c28ad"
+}

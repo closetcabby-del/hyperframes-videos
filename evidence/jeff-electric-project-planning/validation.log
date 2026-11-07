@@ -1,0 +1,16 @@
+{
+  "ok": true,
+  "file": "renders/jeff-electric-project-planning.mp4",
+  "width": 1080,
+  "height": 1920,
+  "duration": 15,
+  "fps": "30/1",
+  "frames": 450,
+  "codec": "h264",
+  "pixelFormat": "yuv420p",
+  "profile": "High",
+  "fullDecode": "passed",
+  "fastStart": true,
+  "bytes": 562596,
+  "sha256": "27ae797ff3724aac35f91d627e5ec6eae8f1c12b3915f3ba1968266915950049"
+}

@@ -1,0 +1,15 @@
+<template><style>#root{position:absolute;inset:0;background:#0D0D0D;color:#fff;font-family:"Jeff Inter",sans-serif;overflow:hidden}
+.brand{position:absolute;left:110px;top:216px;font-size:34px;margin:0;color:#DEAD44}
+.eyebrow{position:absolute;left:110px;top:295px;font-size:30px;letter-spacing:3px;margin:0;color:#fff}
+h1{position:absolute;left:106px;top:385px;width:770px;font-family:"Jeff Oswald",sans-serif;font-weight:600;font-size:124px;line-height:1.15;margin:0;letter-spacing:-1px}
+h1 span{display:block}.accent{color:#DEAD44}
+.support{position:absolute;left:110px;top:850px;font-size:42px;line-height:1.5;margin:0;width:750px}
+.rule{position:absolute;left:110px;top:750px;width:748px;height:7px;background:#DEAD44;transform-origin:left center}
+.route{position:absolute;left:110px;top:1400px;width:750px;height:350px}
+h1 .accent{font-size:100px}</style>
+<div id="root" data-composition-id="checked" data-width="1080" data-height="1920">
+<p class="brand">Jeff Electric</p><p class="eyebrow">ELECTRICAL TROUBLESHOOTING</p>
+<h1 id="headline"><span>START WITH</span><span class="accent">Jeff Electric.</span></h1>
+<div id="rule" class="rule"></div><p id="support" class="support">Contact us to schedule<br>electrical service.</p>
+<svg class="route" viewBox="0 0 750 350" aria-hidden="true"><path d="M0 330 H310 L430 210 H580 L730 60" fill="none" stroke="#1A1A1A" stroke-width="6"/><path id="wire" d="M0 330 H310 L430 210 H580 L730 60" fill="none" stroke="#DEAD44" stroke-width="6" stroke-dasharray="1200"/></svg>
+</div><script>const tl=gsap.timeline({paused:true});tl.fromTo('#headline',{x:44,opacity:0},{x:0,opacity:1,duration:0.38,ease:'power4.out'},0);tl.fromTo('#support',{y:24,opacity:0},{y:0,opacity:1,duration:0.5,ease:'power2.out'},0.25);tl.fromTo('#rule',{scaleX:0},{scaleX:1,duration:0.6,ease:'expo.out'},0.15);tl.fromTo('#wire',{strokeDashoffset:1200},{strokeDashoffset:0,duration:3.6999999999999997,ease:'none'},0);window.__timelines=window.__timelines||{};window.__timelines['checked']=tl;</script></template>

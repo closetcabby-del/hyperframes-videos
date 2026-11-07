@@ -1,0 +1,62 @@
+◆  Capturing review frames (beats, seams, phone) from jeff-electric-ad-flickering
+[hyperframes] browserGpuMode probe → software (WebGL renderer vendor="Google Inc. (Mesa)" renderer="ANGLE (Mesa, llvmpipe (LLVM 19.1.7 256 bits), OpenGL ES 3.2)")
+[SystemMemory] cgroup memory limit detected: 16384 MiB. It governs memory-adaptive render behaviour instead of host RAM.
+
+   Fonts: 2 loaded
+   Review: 8 beat(s) and 3 seam(s) within 0–15s
+[hyperframes] snapshot: frame 1/23 at 0.3s
+[hyperframes] snapshot: frame 2/23 at 1.8s
+[hyperframes] snapshot: frame 3/23 at 3.9s
+[hyperframes] snapshot: frame 4/23 at 5.2s
+[hyperframes] snapshot: frame 5/23 at 7.1s
+[hyperframes] snapshot: frame 6/23 at 8.7s
+[hyperframes] snapshot: frame 7/23 at 10.9s
+[hyperframes] snapshot: frame 8/23 at 12.8s
+[hyperframes] snapshot: frame 9/23 at 3.4s
+[hyperframes] snapshot: frame 10/23 at 3.5s
+[hyperframes] snapshot: frame 11/23 at 3.6s
+[hyperframes] snapshot: frame 12/23 at 3.7s
+[hyperframes] snapshot: frame 13/23 at 3.8s
+[hyperframes] snapshot: frame 14/23 at 6.6s
+[hyperframes] snapshot: frame 15/23 at 6.7s
+[hyperframes] snapshot: frame 16/23 at 6.8s
+[hyperframes] snapshot: frame 17/23 at 6.9s
+[hyperframes] snapshot: frame 18/23 at 7s
+[hyperframes] snapshot: frame 19/23 at 10.4s
+[hyperframes] snapshot: frame 20/23 at 10.5s
+[hyperframes] snapshot: frame 21/23 at 10.6s
+[hyperframes] snapshot: frame 22/23 at 10.7s
+[hyperframes] snapshot: frame 23/23 at 10.8s
+   Revision: none (unversioned)
+   State: /workspace/hyperframes-videos/projects/jeff-electric-ad-flickering/.hyperframes/video-state.json
+
+◇  23 snapshots saved to /workspace/hyperframes-videos/evidence/jeff-electric-ad-flickering/review
+   /workspace/hyperframes-videos/evidence/jeff-electric-ad-flickering/review/beat-01-at-0.3s.png
+   /workspace/hyperframes-videos/evidence/jeff-electric-ad-flickering/review/beat-02-at-1.8s.png
+   /workspace/hyperframes-videos/evidence/jeff-electric-ad-flickering/review/beat-03-at-3.9s.png
+   /workspace/hyperframes-videos/evidence/jeff-electric-ad-flickering/review/beat-04-at-5.2s.png
+   /workspace/hyperframes-videos/evidence/jeff-electric-ad-flickering/review/beat-05-at-7.1s.png
+   /workspace/hyperframes-videos/evidence/jeff-electric-ad-flickering/review/beat-06-at-8.7s.png
+   /workspace/hyperframes-videos/evidence/jeff-electric-ad-flickering/review/beat-07-at-10.9s.png
+   /workspace/hyperframes-videos/evidence/jeff-electric-ad-flickering/review/beat-08-at-12.8s.png
+   /workspace/hyperframes-videos/evidence/jeff-electric-ad-flickering/review/seam-01-1-at-3.4s.png
+   /workspace/hyperframes-videos/evidence/jeff-electric-ad-flickering/review/seam-01-2-at-3.5s.png
+   /workspace/hyperframes-videos/evidence/jeff-electric-ad-flickering/review/seam-01-3-at-3.6s.png
+   /workspace/hyperframes-videos/evidence/jeff-electric-ad-flickering/review/seam-01-4-at-3.7s.png
+   /workspace/hyperframes-videos/evidence/jeff-electric-ad-flickering/review/seam-01-5-at-3.8s.png
+   /workspace/hyperframes-videos/evidence/jeff-electric-ad-flickering/review/seam-02-1-at-6.6s.png
+   /workspace/hyperframes-videos/evidence/jeff-electric-ad-flickering/review/seam-02-2-at-6.7s.png
+   /workspace/hyperframes-videos/evidence/jeff-electric-ad-flickering/review/seam-02-3-at-6.8s.png
+   /workspace/hyperframes-videos/evidence/jeff-electric-ad-flickering/review/seam-02-4-at-6.9s.png
+   /workspace/hyperframes-videos/evidence/jeff-electric-ad-flickering/review/seam-02-5-at-7s.png
+   /workspace/hyperframes-videos/evidence/jeff-electric-ad-flickering/review/seam-03-1-at-10.4s.png
+   /workspace/hyperframes-videos/evidence/jeff-electric-ad-flickering/review/seam-03-2-at-10.5s.png
+   /workspace/hyperframes-videos/evidence/jeff-electric-ad-flickering/review/seam-03-3-at-10.6s.png
+   /workspace/hyperframes-videos/evidence/jeff-electric-ad-flickering/review/seam-03-4-at-10.7s.png
+   /workspace/hyperframes-videos/evidence/jeff-electric-ad-flickering/review/seam-03-5-at-10.8s.png
+   Beat sheet (settled frame per scene): /workspace/hyperframes-videos/evidence/jeff-electric-ad-flickering/review/review-beats.jpg
+     0.3s flicker · 1.8s flicker mid · 3.9s breaker · 5.2s breaker mid · 7.1s checked · 8.7s checked mid · 10.9s contact · 12.8s contact mid
+   Seam 1 at 3.6s (flicker -> breaker): /workspace/hyperframes-videos/evidence/jeff-electric-ad-flickering/review/review-seam-01.jpg
+   Seam 2 at 6.8s (breaker -> checked): /workspace/hyperframes-videos/evidence/jeff-electric-ad-flickering/review/review-seam-02.jpg
+   Seam 3 at 10.6s (checked -> contact): /workspace/hyperframes-videos/evidence/jeff-electric-ad-flickering/review/review-seam-03.jpg
+   Phone sheet (beats at 360 px wide): /workspace/hyperframes-videos/evidence/jeff-electric-ad-flickering/review/review-phone.jpg

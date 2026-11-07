@@ -2,3 +2,5 @@ node_modules/
 .cache/
 video/.hyperframes/
 video/.hyperframes-preview*
+projects/**/.hyperframes/
+projects/**/.hyperframes-preview*

@@ -1,0 +1,17 @@
+{
+  "ok": true,
+  "skills": [
+    {
+      "name": "jeff-electric-reels",
+      "frontmatter": "passed",
+      "relativeLinks": "passed",
+      "path": ".agents/skills/jeff-electric-reels/SKILL.md"
+    },
+    {
+      "name": "jeff-electric-video-ads",
+      "frontmatter": "passed",
+      "relativeLinks": "passed",
+      "path": ".agents/skills/jeff-electric-video-ads/SKILL.md"
+    }
+  ]
+}

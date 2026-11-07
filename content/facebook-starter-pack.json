@@ -1,0 +1,84 @@
+[
+  {
+    "name": "jeff-electric-troubleshooting",
+    "kind": "Facebook Reel",
+    "title": "Lights flickering? Breaker keeps tripping?",
+    "caption": "Lights flickering? Breaker keeps tripping? Get the problem checked by Jeff Electric. Contact us to schedule electrical troubleshooting.\n\n#JeffElectric #ElectricalTroubleshooting #ElectricalService",
+    "cards": null
+  },
+  {
+    "name": "jeff-electric-project-planning",
+    "kind": "Facebook Reel",
+    "title": "Planning a project? Think electrical.",
+    "caption": "Planning your next project? Think about the electrical work early. Contact Jeff Electric to discuss your project and schedule service.\n\n#JeffElectric #ProjectPlanning #ElectricalWork",
+    "cards": [
+      [
+        "PLANNING",
+        "A PROJECT?",
+        "Think about the electrical<br>work early."
+      ],
+      [
+        "THINK",
+        "ELECTRICAL.",
+        "A little planning helps you<br>ask the right questions."
+      ],
+      [
+        "START WITH",
+        "Jeff Electric.",
+        "Talk through the electrical<br>work for your project."
+      ]
+    ]
+  },
+  {
+    "name": "jeff-electric-ad-flickering",
+    "kind": "Facebook ad creative A",
+    "title": "Flickering lights \u2014 troubleshooting ad",
+    "primaryText": "Flickering lights? Get the problem checked by Jeff Electric. Contact us to schedule electrical troubleshooting.",
+    "headline": "Schedule electrical troubleshooting",
+    "description": "Contact Jeff Electric to discuss service.",
+    "cta": "Contact Us",
+    "cards": [
+      [
+        "LIGHTS",
+        "FLICKERING?",
+        "Get a recurring electrical<br>problem checked."
+      ],
+      [
+        "GET IT",
+        "CHECKED.",
+        "Electrical troubleshooting<br>with Jeff Electric."
+      ],
+      [
+        "START WITH",
+        "Jeff Electric.",
+        "Contact us to schedule<br>electrical service."
+      ]
+    ]
+  },
+  {
+    "name": "jeff-electric-ad-breaker",
+    "kind": "Facebook ad creative B",
+    "title": "Tripping breaker \u2014 troubleshooting ad",
+    "primaryText": "Breaker keeps tripping? Get the problem checked by Jeff Electric. Contact us to schedule electrical troubleshooting.",
+    "headline": "Schedule electrical troubleshooting",
+    "description": "Contact Jeff Electric to discuss service.",
+    "cta": "Contact Us",
+    "cards": [
+      [
+        "BREAKER",
+        "KEEPS TRIPPING?",
+        "Get a recurring electrical<br>problem checked."
+      ],
+      [
+        "GET IT",
+        "CHECKED.",
+        "Electrical troubleshooting<br>with Jeff Electric."
+      ],
+      [
+        "START WITH",
+        "Jeff Electric.",
+        "Contact us to schedule<br>electrical service."
+      ]
+    ]
+  }
+]

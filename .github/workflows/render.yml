@@ -4,6 +4,8 @@ on:
   push:
     paths:
       - 'video/**'
+      - 'projects/**'
+      - 'configs/**'
       - 'scripts/**'
       - 'package*.json'
       - '.github/workflows/render.yml'
@@ -13,6 +15,25 @@ jobs:
   render:
     runs-on: ubuntu-24.04
     timeout-minutes: 20
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - project: smoke
+            output: renders/test-1080p.mp4
+            evidence: evidence
+          - project: jeff-electric-troubleshooting
+            output: renders/jeff-electric-troubleshooting.mp4
+            evidence: evidence/jeff-electric-troubleshooting
+          - project: jeff-electric-project-planning
+            output: renders/jeff-electric-project-planning.mp4
+            evidence: evidence/jeff-electric-project-planning
+          - project: jeff-electric-ad-flickering
+            output: renders/jeff-electric-ad-flickering.mp4
+            evidence: evidence/jeff-electric-ad-flickering
+          - project: jeff-electric-ad-breaker
+            output: renders/jeff-electric-ad-breaker.mp4
+            evidence: evidence/jeff-electric-ad-breaker
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -26,17 +47,17 @@ jobs:
           command -v google-chrome
       - name: Install and verify dependencies
         run: bash scripts/setup.sh
-      - name: Render and validate 5-second 1080p MP4
-        run: npm run render
+      - name: Render and validate ${{ matrix.project }} MP4
+        run: npm run render -- ${{ matrix.project }}
       - name: Verify browser playback
-        run: HYPERFRAMES_BROWSER_PATH="$(command -v google-chrome)" node scripts/playback.cjs
+        run: HYPERFRAMES_BROWSER_PATH="$(command -v google-chrome)" node scripts/playback.cjs ${{ matrix.project }}
       - name: Upload finished video and evidence
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: hyperframes-video-and-evidence
+          name: hyperframes-${{ matrix.project }}-video-and-evidence
           path: |
-            renders/test-1080p.mp4
-            evidence/
+            ${{ matrix.output }}
+            ${{ matrix.evidence }}/
           if-no-files-found: error
           retention-days: 30

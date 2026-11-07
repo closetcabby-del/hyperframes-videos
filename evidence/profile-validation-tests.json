@@ -1,0 +1,28 @@
+{
+  "ok": true,
+  "profiles": [
+    {
+      "profile": "smoke",
+      "loaded": true
+    },
+    {
+      "profile": "jeff-electric-troubleshooting",
+      "loaded": true
+    },
+    {
+      "profile": "jeff-electric-project-planning",
+      "loaded": true
+    },
+    {
+      "profile": "jeff-electric-ad-flickering",
+      "loaded": true
+    },
+    {
+      "profile": "jeff-electric-ad-breaker",
+      "loaded": true
+    }
+  ],
+  "invalidProfileRejected": true,
+  "missingProfileRejected": true,
+  "wrongDimensionsRejected": true
+}

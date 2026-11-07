@@ -1,0 +1,10 @@
+{
+  "project": "projects/jeff-electric-ad-breaker",
+  "output": "renders/jeff-electric-ad-breaker.mp4",
+  "evidence": "evidence/jeff-electric-ad-breaker",
+  "width": 1080,
+  "height": 1920,
+  "duration": 15,
+  "fps": 30,
+  "resolution": "portrait"
+}

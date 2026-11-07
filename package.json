@@ -8,7 +8,8 @@
     "check": "./scripts/hf.sh check video --json",
     "render": "./scripts/render.sh",
     "verify": "node scripts/verify.mjs renders/test-1080p.mp4",
-    "preview": "./scripts/hf.sh preview video --background"
+    "preview": "./scripts/hf.sh preview video --background",
+    "render:facebook": "./scripts/render-facebook-pack.sh"
   },
   "keywords": [],
   "author": "",

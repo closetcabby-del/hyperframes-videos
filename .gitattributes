@@ -1,2 +1,4 @@
 # Preserve upstream minified vendor files without applying source whitespace checks.
 video/assets/gsap.min.js -whitespace
+projects/**/assets/gsap.min.js -whitespace
+projects/**/assets/fonts/OFL-*.txt -whitespace

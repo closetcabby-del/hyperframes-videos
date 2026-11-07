@@ -1,0 +1,9 @@
+<template><style>
+#root{position:absolute;inset:0;background:#0D0D0D;color:#fff;font-family:"Jeff Inter",sans-serif}
+#logo{position:absolute;left:125px;top:190px;width:700px;height:auto}
+#cta{position:absolute;left:110px;top:840px;width:750px;font-family:"Jeff Oswald",sans-serif;font-weight:600;font-size:76px;line-height:1.24;margin:0}
+#cta span{color:#DEAD44}#end-rule{position:absolute;left:110px;top:1160px;width:748px;height:7px;background:#DEAD44;transform-origin:left center}
+</style><div id="root" data-composition-id="contact" data-width="1080" data-height="1920">
+<img id="logo" src="assets/jeff-electric-logo.png" alt="Jeff Electric — Wiring Tomorrow, Today">
+<p id="cta">Contact Jeff Electric<br>to <span>schedule service.</span></p><div id="end-rule"></div>
+</div><script>const tl=gsap.timeline({paused:true});tl.fromTo('#cta',{y:30,opacity:0},{y:0,opacity:1,duration:0.55,ease:'power3.out'},0);tl.fromTo('#end-rule',{scaleX:0},{scaleX:1,duration:3.8,ease:'none'},0.2);window.__timelines=window.__timelines||{};window.__timelines.contact=tl;</script></template>

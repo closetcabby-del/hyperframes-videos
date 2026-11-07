@@ -1,0 +1,10 @@
+{
+  "project": "projects/jeff-electric-project-planning",
+  "output": "renders/jeff-electric-project-planning.mp4",
+  "evidence": "evidence/jeff-electric-project-planning",
+  "width": 1080,
+  "height": 1920,
+  "duration": 15,
+  "fps": 30,
+  "resolution": "portrait"
+}

@@ -1,0 +1,10 @@
+{
+  "project": "projects/jeff-electric-troubleshooting",
+  "output": "renders/jeff-electric-troubleshooting.mp4",
+  "evidence": "evidence/jeff-electric-troubleshooting",
+  "width": 1080,
+  "height": 1920,
+  "duration": 15,
+  "fps": 30,
+  "resolution": "portrait"
+}

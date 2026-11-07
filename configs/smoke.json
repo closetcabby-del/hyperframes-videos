@@ -1,0 +1,10 @@
+{
+  "project": "video",
+  "output": "renders/test-1080p.mp4",
+  "evidence": "evidence",
+  "width": 1920,
+  "height": 1080,
+  "duration": 5,
+  "fps": 30,
+  "resolution": "landscape"
+}

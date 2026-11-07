@@ -1,0 +1,16 @@
+{
+  "ok": true,
+  "file": "renders/jeff-electric-ad-breaker.mp4",
+  "width": 1080,
+  "height": 1920,
+  "duration": 15,
+  "fps": "30/1",
+  "frames": 450,
+  "codec": "h264",
+  "pixelFormat": "yuv420p",
+  "profile": "High",
+  "fullDecode": "passed",
+  "fastStart": true,
+  "bytes": 560136,
+  "sha256": "635033ac9f8d95b7edf28d4f08831a83238d748fb6fb6c22254459f75b4a91e2"
+}

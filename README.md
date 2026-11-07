@@ -1,38 +1,69 @@
-# HyperFrames in Codex Cloud
+# Jeff Electric videos with HyperFrames
 
-Pinned HeyGen HyperFrames 0.9.20 and GSAP 3.15.1. The test composition is five seconds, 1920×1080, 30 fps. No HeyGen API key, desktop app, Windows computer, Docker, GPU, or paid hosted renderer is needed for this test. Chrome captures frames and FFmpeg encodes them on the machine executing the scripts.
+Two Facebook Reels, two Facebook video ad creatives, and reusable Codex skills. Built and rendered in the cloud with pinned HeyGen HyperFrames 0.9.20 and GSAP 3.15.1.
 
-Repository: https://github.com/closetcabby-del/hyperframes-videos
+## Facebook starter pack
 
-[Download the verified test MP4](https://github.com/closetcabby-del/hyperframes-videos/raw/refs/heads/main/renders/test-1080p.mp4)
+All four videos are 15 seconds, 1080×1920, 30 fps, silent, and readable without audio. They use the original Jeff Electric logo and the black/gold brand palette. They are prepared for owner review; no social posts or campaigns are launched by this repository.
 
-## Codex Cloud setup
+| Creative | Download |
+| --- | --- |
+| Reel: Electrical troubleshooting | [MP4](https://github.com/closetcabby-del/hyperframes-videos/raw/refs/heads/main/renders/jeff-electric-troubleshooting.mp4) |
+| Reel: Planning a project | [MP4](https://github.com/closetcabby-del/hyperframes-videos/raw/refs/heads/main/renders/jeff-electric-project-planning.mp4) |
+| Ad A: Flickering lights | [MP4](https://github.com/closetcabby-del/hyperframes-videos/raw/refs/heads/main/renders/jeff-electric-ad-flickering.mp4) |
+| Ad B: Breaker keeps tripping | [MP4](https://github.com/closetcabby-del/hyperframes-videos/raw/refs/heads/main/renders/jeff-electric-ad-breaker.mp4) |
 
-Connect the intended GitHub repository to a **cloud** environment. Use Node.js 22+ (validated here with 24). Install Linux `ffmpeg` and Chromium/Google Chrome in the environment image. In this managed cloud environment those are already installed. If missing, use the supported system package installer; do not install Windows binaries.
+[Captions and ad copy](content/facebook-starter-pack.md). [Brand source notes](content/jeff-electric-troubleshooting.md). [Validation evidence](evidence/).
 
-Set the environment setup command to `bash scripts/setup.sh`. Enable network during dependency setup for npm; assets used by the render are local. Set `HYPERFRAMES_BROWSER_PATH` if Chrome is not on PATH. The wrapper detects Chromium and Google Chrome automatically and puts caches in the workspace.
+Before launching paid ads, choose a verified contact destination and review the actual Facebook placement preview. Rendering does not establish Meta approval or ad performance.
 
-Run `npm run render`. This performs HyperFrames checks, renders the video, fully decodes it with FFmpeg, checks dimensions/duration/frame count/H.264 pixel format/fast-start, and extracts a frame. Failures stop the script. Some HyperFrames JSON commands return exit zero even on failed checks, so the render script explicitly checks `ok`.
+## Reusable Codex skills
 
-In an agent sandbox that blocks Chrome launch, allow the browser command to run through the cloud runtime's supported execution route. This still runs in the cloud. Do not point the environment at a personal computer.
+The repository includes two local skills under `.agents/skills/`:
 
-`npm run doctor` reports optional transcription, voice, music, and Docker tools as missing. They are not required for this silent smoke test. `scripts/setup.sh` gates on the four required runtime dependencies.
+- [$jeff-electric-reels](.agents/skills/jeff-electric-reels/SKILL.md): organic short-form video, script, caption, rendering, and delivery.
+- [$jeff-electric-video-ads](.agents/skills/jeff-electric-video-ads/SKILL.md): paid-social creative, hooks, variants, ad copy, rendering, and delivery.
+
+They extend the installed HyperFrames core instructions. They are available to Codex when it reads this repository's local skills; they are not globally installed ChatGPT plugins. If the picker does not show them immediately, start a new cloud task in this repository, or ask Codex to read the corresponding SKILL.md directly.
+
+From an iPhone, open Codex Cloud, select this repository and a cloud environment, then ask:
+
+> Use $jeff-electric-reels to create a 15-second Facebook Reel about [topic]. Use the Jeff Electric brand assets, render and validate it in the cloud, and give me the MP4 and caption.
+
+Or:
+
+> Use $jeff-electric-video-ads to create two Facebook ad creatives for [verified service], with different opening hooks. Render both MP4s and include primary text, headlines, and CTAs. Do not launch a campaign.
+
+## Cloud setup and rendering
+
+Requirements: Node.js 22+ (validated with 24), FFmpeg/FFprobe, Chromium or Google Chrome. No Windows computer, desktop app, Docker, GPU, paid hosted renderer, or HeyGen API key is needed for these text-led videos.
+
+Set the Codex Cloud setup command to `bash scripts/setup.sh`. The selected environment must have FFmpeg and Chrome installed in its Linux image. Set `HYPERFRAMES_BROWSER_PATH` if Chrome is not on PATH. The wrapper automatically detects common Chromium/Chrome executables and stores caches in the workspace. Enable network during dependency installation; render assets are local.
+
+```bash
+bash scripts/setup.sh
+npm run render -- jeff-electric-troubleshooting
+node scripts/playback.cjs jeff-electric-troubleshooting
+npm run render:facebook
+```
+
+The original five-second, 1920×1080 smoke test is preserved:
+
+```bash
+npm run render
+node scripts/playback.cjs smoke
+```
+
+Each render profile in `configs/` declares project path, output, evidence folder, dimensions, duration, FPS, and resolution. `scripts/render.mjs` checks the composition, renders MP4, fully decodes it with FFmpeg, checks H.264/yuv420p, frame count/FPS/duration/dimensions/fast-start, and extracts a frame. JSON `ok` is checked explicitly because some HyperFrames commands return zero despite failed checks. Browser playback is a separate advancing-video test.
+
+If the command sandbox prevents Chrome launch, use the cloud runtime's supported execution route. This still runs in the cloud. Do not use a personal computer as the execution environment.
+
+Doctor may report optional transcription, voice, music, or Docker tools missing. They are not required for these silent videos; setup gates on the required dependencies.
 
 ## From an iPhone
 
-1. Open Codex in your supported mobile app or Safari, select this repository and its **cloud** environment.
-2. Ask: “Create a HyperFrames video about [topic] in `video/`, run the full checks, render it with the repository scripts, validate the MP4, and provide a downloadable video and rendering evidence.” The supplied validator deliberately requires the smoke test's 5 seconds/1080p/30 fps; adjust its expected values for other formats.
-3. For the repeatable GitHub-hosted route, open the repository in Safari, choose **Actions → Render HyperFrames video → Run workflow** (the workflow must first be committed to the default branch). If the mobile view hides this control, request the desktop website in Safari.
-4. Open the completed run, scroll to **Artifacts**, and download `hyperframes-video-and-evidence`. In Files, tap the ZIP to extract it, then open `renders/test-1080p.mp4`. Share → Save Video saves to Photos when offered. Artifacts require GitHub sign-in and expire after 30 days.
+Open an MP4 download link above, save to Files, and use Share → Save Video when available. Upload the reviewed file in Facebook and paste its caption from the copy pack. Physical iPhone playback has not been tested by the agent.
 
-The GitHub Actions route uses a GitHub-hosted Ubuntu runner and does not require your laptop. Check the Actions page for the latest run and its logs. A local cloud render alone does not prove a GitHub Actions run succeeded.
+For repeat renders from GitHub, open **Actions → Render HyperFrames video → Run workflow**. If hidden in Safari's mobile view, request the desktop website. The workflow renders the smoke test and all four creatives on GitHub-hosted Ubuntu runners. Open a completed job and download its `hyperframes-<profile>-video-and-evidence` artifact; tap the ZIP in Files to extract it. Actions artifacts require GitHub sign-in and expire after 30 days. The MP4s committed in `renders/` remain accessible independently of artifact retention.
 
-## Evidence
-
-`evidence/install.log`, `doctor.json`, `check.json`, `render.log`, `validation.json`, and `decoded-frame.png` record installation, runtime checks, render output, technical validation, and a decoded image. `renders/test-1080p.mp4` is the deliverable. Cloud provenance is in `evidence/cloud-runtime.json`.
-
-## Download this verified test on iPhone
-
-Open the delivered Google Drive video link while signed into the account connected to this chat. In the Drive iPhone app, use the file menu → **Send a copy** → **Save Video**, or **Open in** → **Save to Files**, depending on the options shown. Safari can download to Files. Drive may need processing time before its web preview is ready; downloading the MP4 does not depend on that preview. Physical iPhone playback has not been tested by the agent.
-
-The initial browser playback probe used a file URL and hit managed Chrome's `ERR_BLOCKED_BY_ADMINISTRATOR` policy. The final test serves the MP4 over loopback HTTP inside the cloud executor, without changing browser policy. See `evidence/browser-playback.json`.
+The workflow only renders and uploads artifacts. It does not post to Facebook, launch ads, or spend money.
