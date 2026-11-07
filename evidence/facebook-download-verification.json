@@ -1,0 +1,27 @@
+{
+  "ok": true,
+  "videos": [
+    {
+      "file": "renders/jeff-electric-troubleshooting.mp4",
+      "downloaded": true,
+      "sha256MatchesValidatedVideo": true
+    },
+    {
+      "file": "renders/jeff-electric-project-planning.mp4",
+      "downloaded": true,
+      "sha256MatchesValidatedVideo": true
+    },
+    {
+      "file": "renders/jeff-electric-ad-flickering.mp4",
+      "downloaded": true,
+      "sha256MatchesValidatedVideo": true
+    },
+    {
+      "file": "renders/jeff-electric-ad-breaker.mp4",
+      "downloaded": true,
+      "sha256MatchesValidatedVideo": true
+    }
+  ],
+  "zipChecksum": "passed",
+  "zipContents": "four videos + copy + validation"
+}
