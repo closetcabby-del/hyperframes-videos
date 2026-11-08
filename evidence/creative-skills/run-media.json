@@ -1,0 +1,42 @@
+{
+  "cases": [
+    {
+      "id": "asset_fit",
+      "response": {
+        "disposition": "Needs assets or facts. Do not render another rejected montage or substitute an unauthorized carousel. No current trend is verified; shares cannot be guaranteed.",
+        "inventory": "Per fixture description, not direct playback: two modest stills, a roughly 324-pixel-wide screenshot, and a silent still montage. None supplies action, performance, a documented transformation, or operating-test evidence. Upscaling cannot restore missing detail.",
+        "three_concepts": [
+          "Human misunderstanding: open on a worker posing beside a generator. Filmer says “Just the generator”; worker says “Right” and steps aside. Payoff: the small awkward pause. Needs one natural performed take; risk: overacting.",
+          "Satisfying finishing detail: open on actual finishing action, follow it to completion, then reveal the matching installation. Needs safely captured action and documented same-job context; current stills cannot establish progression.",
+          "Useful observation: a presenter asks what an equipment photo actually proves, then explains that installed equipment alone does not establish an operating test. Needs an accurate original performance and photo permission; risk: another text lecture rather than entertainment."
+        ],
+        "selection": "Develop the human misunderstanding. It changes the storytelling mechanism and needs only one new take. This is proposed staged dialogue, not an existing employee exchange or completed company job.",
+        "minimal_shot": "One 7–9-second portrait take at an authorized safe location: 0–2s worker notices camera and poses; 2–5s exchange above and worker steps aside; 5–7s hold. Record intelligible original voices and ambience. Obtain consent, exclude private details, and do not open or operate equipment for spectacle. No separate reaction shot or music needed.",
+        "prepare_now": "Prepare the capture card, two-line subtitle layout, safe framing guide, and permission checklist. Proposed organic caption: “The generator got the photo.” Use natural sound, without a sales panel. Reassess the actual performance before production; no approval ritual is required, but the missing take blocks this concept.",
+        "review_and_limits": "Viewer benefit: recognition and a smile; opening and payoff belong to one human moment. Missing performance is the highest-impact defect. Fonts, whooshes, and a new caption cannot fix it. Do not claim current trend status, soundtrack clearance, tests, job outcomes, audience appeal, completed capture, rendering, publication, or performance results."
+      }
+    },
+    {
+      "id": "supported_story",
+      "response": {
+        "scope": "Synthetic fixture only; do not publish these facts as Jeff Electric work. Inventory and permissions come from the fixture, not direct playback.",
+        "brief": "Organic Facebook/Instagram Reel for homeowners: recognize an uncomfortable room and enjoy its documented visual change.",
+        "three_concepts": [
+          "Voice-led contrast: open on A-before with C’s homeowner wish, match-cut to A-after, end on B. Payoff: the intended reading corner becomes visually understandable. Needs A/B/C; risk: overediting natural speech.",
+          "Visual discovery: open on B’s light detail, widen to A-after, briefly compare A-before. Payoff: discover where the detail belongs. Needs A/B; risk: detail reveals everything before the room adds meaning.",
+          "Direct comparison: open with aligned, labeled A-before/after side by side, expand after, finish on B. Payoff: immediate visible comparison. Needs A/B; risk: narrow images obscure the light on phones."
+        ],
+        "selection": "Choose voice-led contrast. The authorized observation gives this particular transformation human meaning without an absent reaction or installation-action shot.",
+        "shot_linked_treatment": [
+          "0–2.2s, provisional: A-before, full portrait angle; small “Before” label. Start C: “We wanted a reading corner, not a waiting room.” Subtitle exact speech in short synchronized phrases. No logo opener.",
+          "2.2–6.7s: hard match-cut to A-after, same crop; label “After.” Finish C naturally, then hold the room. Align the cut to an actual phrase boundary; adjust timings after listening. Do not darken before or exaggerate after.",
+          "6.7–9.7s: B’s three-second finished detail with its clean room audio. No extra text, invented reaction, or closing sales panel."
+        ],
+        "sound": "Authentic C, then quiet B ambience; no music or added electrical effects. Check levels and intelligibility after listening. Exact subtitles and before/after labels support muted viewing; check phone legibility and platform-safe placement.",
+        "caption": "Fixture draft: “We wanted a reading corner, not a waiting room.” Same room. A different feel.",
+        "cta": "None needed.",
+        "creative_review": "Ready for production/review within the fixture. Opening intention pays off in the matching reveal; B adds concrete detail. Natural verified wording passes the specificity test. Each shot has a job; no montage filler. Organic footage/voice permission is supplied, but no music or paid-use rights are inferred. Omit prices, savings, credentials, location, outage/test claims. Text review only: actual footage, sound, privacy, captions, and export remain unreviewed. No render, publication, or audience-performance promise."
+      }
+    }
+  ]
+}

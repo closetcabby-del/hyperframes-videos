@@ -17,22 +17,32 @@ All four videos are 15 seconds, 1080×1920, 30 fps, silent, and readable without
 
 Before launching paid ads, choose a verified contact destination and review the actual Facebook placement preview. Rendering does not establish Meta approval or ad performance.
 
-## Reusable Codex skills
+## Creative skills
 
-The repository includes two local skills under `.agents/skills/`:
+Start with **[$jeff-electric-creative-director](.agents/skills/jeff-electric-creative-director/SKILL.md)**. It researches references when needed, checks the actual source media, selects a concrete concept, and runs a creative review before production.
 
-- [$jeff-electric-reels](.agents/skills/jeff-electric-reels/SKILL.md): organic short-form video, script, caption, rendering, and delivery.
-- [$jeff-electric-video-ads](.agents/skills/jeff-electric-video-ads/SKILL.md): paid-social creative, hooks, variants, ad copy, rendering, and delivery.
+| Skill | Job |
+| --- | --- |
+| [Creative Director](.agents/skills/jeff-electric-creative-director/SKILL.md) | Audience, references, concept selection, media fit, and critical review |
+| [Copywriter](.agents/skills/jeff-electric-copywriter/SKILL.md) | Natural hooks, dialogue, scripts, captions, and ad copy |
+| [Video Storyteller](.agents/skills/jeff-electric-video-storyteller/SKILL.md) | Opening visual, shot sequence, performance, editing, and sound |
+| [Rights Review](.agents/skills/jeff-electric-rights-review/SKILL.md) | Copyright, music scope, permissions, provenance, and truthful claims |
+| [Reels Production](.agents/skills/jeff-electric-reels/SKILL.md) | Build, render, inspect, and deliver a supported organic creative |
+| [Video Ads](.agents/skills/jeff-electric-video-ads/SKILL.md) | Produce a supported ad treatment and copy pack |
 
-They extend the installed HyperFrames core instructions. They are available to Codex when it reads this repository's local skills; they are not globally installed ChatGPT plugins. If the picker does not show them immediately, start a new cloud task in this repository, or ask Codex to read the corresponding SKILL.md directly.
+The initial exported videos above remain as technical samples. The owner rejected their creative direction; they are not examples of creative approval or demonstrated marketing performance. The revised skills remove the automatic silent text-led/four-scene recipe and explicitly retain that feedback.
 
-From an iPhone, open Codex Cloud, select this repository and a cloud environment, then ask:
+From an iPhone, start a Codex Cloud task in this repository and ask:
 
-> Use $jeff-electric-reels to create a 15-second Facebook Reel about [topic]. Use the Jeff Electric brand assets, render and validate it in the cloud, and give me the MP4 and caption.
+> Use $jeff-electric-creative-director to develop a strong Jeff Electric Facebook concept. Research relevant references, inspect our actual media, and give me a concrete treatment supported by the assets. Do not recycle the rejected photo montage or quiz.
 
-Or:
+Or, for an approved treatment:
 
-> Use $jeff-electric-video-ads to create two Facebook ad creatives for [verified service], with different opening hooks. Render both MP4s and include primary text, headlines, and CTAs. Do not launch a campaign.
+> Use $jeff-electric-copywriter and $jeff-electric-video-storyteller to develop this treatment, then use $jeff-electric-reels to render and validate it. Identify any missing essential shot rather than substituting a weak slideshow.
+
+These are repository-local Codex skills, not globally installed ChatGPT plugins. Open a new task after pulling the current repository so skill discovery can load the new names and descriptions. If a picker does not show them, ask Codex to read the corresponding SKILL.md directly. The root `AGENTS.md` routes ordinary content requests into the creative workflow.
+
+[Creative skill guide and test scope](evals/creative-skills/README.md). Skills make decisions more repeatable; they do not guarantee taste, reach, or conversion. Actual publication tests and owner feedback are still necessary.
 
 ## Cloud setup and rendering
 

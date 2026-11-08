@@ -5,11 +5,11 @@ description: Create and render Jeff Electric video ad creatives for Instagram an
 
 # Jeff Electric video ads
 
-Own the creative deliverable from brief through verified video. Start with [shared production rules](../jeff-electric-reels/references/production.md), then the installed HyperFrames core skill at `node_modules/hyperframes/dist/skills/hyperframes/SKILL.md` and the relevant vertical/launch references. The shared rules govern brand facts, privacy, file layout, rendering, QA, and delivery.
+Own the creative deliverable from brief through verified video. Start with [creative direction](../jeff-electric-creative-director/SKILL.md), then [shared production rules](../jeff-electric-reels/references/production.md), then the installed HyperFrames core skill at `node_modules/hyperframes/dist/skills/hyperframes/SKILL.md` and the relevant vertical/launch references. The shared rules govern brand facts, privacy, file layout, rendering, QA, and delivery.
 
 ## Define the conversion
 
-Extract the service, audience, placement, CTA, and any substantiated offer from the user's brief or current approved company sources. If no campaign brief exists, choose electrical troubleshooting for local homeowners, a 15-second 1080×1920 video, and “Contact Jeff Electric to schedule service.” Clearly label those as creative defaults rather than a proven marketing strategy.
+Extract the service, audience, placement, CTA, and any substantiated offer from the user's brief or current approved company sources. If the campaign brief is incomplete, infer a reversible creative hypothesis from verified company services, customer needs, and actual assets. Label assumptions. Do not automatically select troubleshooting, a 15-second runtime, or the same text-led sequence. Use a generic contact CTA when appropriate and omit unverified details.
 
 Do not block creative production because budget, targeting, a phone number, or a landing page is missing. Use a generic contact CTA, omit unverified details, and list only the information needed before an actual campaign launch. Ask a question only when it changes the requested creative materially and cannot be resolved from connected sources.
 
@@ -25,7 +25,7 @@ For another placement, recompose for its aspect ratio rather than stretching or 
 
 ## Build, test, and deliver
 
-Use the brand project as the source template, preserve the smoke test, and follow the shared production checklist. Render every requested variant and validate each one. If using speech or music, load the installed media-use skill first, establish usage rights, and verify the resulting audio stream. Do not add paid generation or incur charges without existing authorization.
+Use existing projects for the technical contract and brand assets; preserve the smoke test. Follow [copywriting](../jeff-electric-copywriter/SKILL.md), [video storytelling](../jeff-electric-video-storyteller/SKILL.md), and [rights review](../jeff-electric-rights-review/SKILL.md) as needed. Resolve concept/media-fit blockers through creative review, then follow the shared production checklist. Render every requested variant and validate each one. If using speech or music, load the installed media-use skill first, establish usage rights, and verify the resulting audio stream. Do not add paid generation or incur charges without existing authorization.
 
 Save `content/<name>-ad-copy.md` with:
 

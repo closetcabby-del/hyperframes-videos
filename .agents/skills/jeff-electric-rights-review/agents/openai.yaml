@@ -1,0 +1,5 @@
+interface:
+  display_name: "Jeff Electric Rights Review"
+  short_description: "Check media rights, music, and factual claims"
+  brand_color: "#DEAD44"
+  default_prompt: "Use $jeff-electric-rights-review to review the actual assets, intended use, and advertising claims in this creative."

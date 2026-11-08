@@ -1,0 +1,5 @@
+interface:
+  display_name: "Jeff Electric Video Ads"
+  short_description: "Produce supported ad creative and copy packs"
+  brand_color: "#DEAD44"
+  default_prompt: "Use $jeff-electric-video-ads to produce this supported Jeff Electric ad treatment and its copy pack without launching a campaign."

@@ -1,0 +1,5 @@
+interface:
+  display_name: "Jeff Electric Video Storyteller"
+  short_description: "Plan shots, performance, pacing, and sound"
+  brand_color: "#DEAD44"
+  default_prompt: "Use $jeff-electric-video-storyteller to turn this supported concept into a concrete shot sequence and sound plan."

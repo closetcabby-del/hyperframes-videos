@@ -1,6 +1,6 @@
 # Shared HyperFrames production rules
 
-These rules apply to the Reels and video-ads skills. They extend the installed HyperFrames instructions; they do not replace its composition contract.
+These technical rules apply after the creative-director workflow has established a supported concept. They extend the installed HyperFrames instructions; they do not replace its composition contract or the separate creative/rights review.
 
 ## Brand and business facts
 
@@ -18,17 +18,17 @@ Use `content/jeff-electric-troubleshooting.md` for the existing asset provenance
 
 Default to 1080×1920 at 30 fps. Keep all essential readable content in the conservative band `x=108..900`, `y=192..1300`; only decoration goes below it. This leaves space for typical platform overlays but does not guarantee compatibility with every current placement. For paid work, check the actual placement preview/specification before publishing.
 
-Use large type, short lines, high contrast, and one focal message per frame. Never shrink critical text to fit excessive copy. The first frame must contain the hook. Avoid strobing. Keep the closing CTA readable for at least 2 seconds.
+Use large type, short lines, high contrast, and one focal message per frame. Never shrink critical text to fit excessive copy. The first frame must contain the hook. Avoid strobing. If a closing CTA is used, give it adequate reading time. Do not add a sales card to every organic post.
 
 ## Files and commands
 
 Keep the 5-second landscape smoke test in `video/` intact.
 
-For a new topic, copy the existing brand project to `projects/<name>/`, and create `configs/<name>.json` using the same schema as `configs/jeff-electric-troubleshooting.json`. Each profile declares `project`, `output`, `evidence`, `width`, `height`, `duration`, `fps`, and `resolution`. Use a lowercase hyphenated name. Keep composition dimensions/duration, scene timings, and profile expectations in agreement. Use a separate output and evidence folder for each video.
+For a new topic, reuse appropriate brand assets and technical scaffolding in `projects/<name>/`; do not copy an old creative structure by default. Create `configs/<name>.json` using the same schema as `configs/jeff-electric-troubleshooting.json`. Each profile declares `project`, `output`, `evidence`, `width`, `height`, `duration`, `fps`, and `resolution`. Use a lowercase hyphenated name. Keep composition dimensions/duration, scene timings, and profile expectations in agreement. Use a separate output and evidence folder for each video.
 
 1. Read the current Git status and relevant `AGENTS.md`; preserve the last working version on a development branch.
 2. Read the installed HyperFrames core skill. Seek paused timelines; never use wall-clock animation or runtime network-dependent assets. Read the registry skill if available before named effects. If the registry is inaccessible, record that and use simple supported typography/motion.
-3. Write scenes and local assets. Lint after the first structural pass.
+3. Resolve creative/media-fit and rights blockers. Write the supported scenes and local assets. Lint after the first structural pass.
 4. `./scripts/hf.sh check projects/<name> --json` — inspect the JSON `ok` value, not only the process exit code. Fix errors and review warnings. No browser/layout samples means those checks were not performed.
 5. `./scripts/hf.sh snapshot projects/<name> --review` — inspect beat, seam, and phone sheets. For important transitions, sample frames on either side. Fix clipping and unreadable copy. Read HyperFrames' `references/review.md`, then save a concise project `REVIEW.md`.
 6. `./scripts/hf.sh preview projects/<name> --background` — verify its actual URL answers HTTP 200. This is the editable review surface; a localhost URL alone is not an iPhone download link. User requests for a finished video authorize continuing to render.
