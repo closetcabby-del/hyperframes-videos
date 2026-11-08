@@ -1,0 +1,5 @@
+interface:
+  display_name: "Jeff Electric Creative Director"
+  short_description: "Choose stronger ideas before video production"
+  brand_color: "#DEAD44"
+  default_prompt: "Use $jeff-electric-creative-director to develop and critically review a distinctive Jeff Electric social concept supported by our actual media."

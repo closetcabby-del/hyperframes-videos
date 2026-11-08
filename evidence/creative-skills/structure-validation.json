@@ -1,0 +1,43 @@
+{
+  "ok": true,
+  "skills": [
+    {
+      "name": "jeff-electric-copywriter",
+      "frontmatter": "passed",
+      "localLinks": "passed",
+      "uiMetadata": "passed"
+    },
+    {
+      "name": "jeff-electric-creative-director",
+      "frontmatter": "passed",
+      "localLinks": "passed",
+      "uiMetadata": "passed"
+    },
+    {
+      "name": "jeff-electric-reels",
+      "frontmatter": "passed",
+      "localLinks": "passed",
+      "uiMetadata": "passed"
+    },
+    {
+      "name": "jeff-electric-rights-review",
+      "frontmatter": "passed",
+      "localLinks": "passed",
+      "uiMetadata": "passed"
+    },
+    {
+      "name": "jeff-electric-video-ads",
+      "frontmatter": "passed",
+      "localLinks": "passed",
+      "uiMetadata": "passed"
+    },
+    {
+      "name": "jeff-electric-video-storyteller",
+      "frontmatter": "passed",
+      "localLinks": "passed",
+      "uiMetadata": "passed"
+    }
+  ],
+  "behavioralFixtures": 4,
+  "note": "Structure checks only; behavioral runs and human creative judgment are separate."
+}

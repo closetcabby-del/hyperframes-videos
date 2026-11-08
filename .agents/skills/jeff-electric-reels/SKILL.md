@@ -1,45 +1,32 @@
 ---
 name: jeff-electric-reels
-description: Create, edit, and render Jeff Electric Instagram Reels, Facebook Reels, and vertical organic social videos using the repository's pinned HyperFrames renderer. Use for service explainers, electrical questions, job showcases, and repeatable short-form content; deliver a verified MP4, post caption, and reusable source.
+description: Produce and validate Jeff Electric Instagram/Facebook Reels and organic vertical videos from a supported creative treatment using pinned HyperFrames. Use for rendering, revisions, captions, and delivery; use the creative-director skill first when the idea or media fit is unresolved.
 ---
 
-# Jeff Electric Reels
+# Jeff Electric Reels production
 
-Deliver the actual video when asked to make content. Own scripting, creative direction, source changes, rendering, visual review, validation, and delivery. Do not hand the user a prompt to run elsewhere when the connected cloud environment can do the work.
+Read [creative direction](../jeff-electric-creative-director/SKILL.md) for a new concept or substantial creative revision, then [shared production rules](references/production.md). Read the installed HyperFrames core skill at `node_modules/hyperframes/dist/skills/hyperframes/SKILL.md` and the relevant vertical/format/media references. If dependencies are missing, run `bash scripts/setup.sh`.
 
-First read [shared production rules](references/production.md), then the installed HyperFrames core skill at `node_modules/hyperframes/dist/skills/hyperframes/SKILL.md` and its `references/types/vertical.md`. If dependencies are missing, run `bash scripts/setup.sh`. Read the CLI skill's relevant references before unfamiliar commands. Keep the existing CLI pin.
+Deliver the actual requested file when the tools and suitable media permit. Own scripting, editing, rendering, review, validation, and delivery. Do not make the owner run a prompt elsewhere when the connected environment can do the work.
 
-## Choose a useful brief
+## Start from the concept and media
 
-- Infer the topic, audience, and service from the request. For a first unspecific video, use the electrical troubleshooting template.
-- Default to one 15-second, 1080×1920, 30 fps video for local homeowners. Use another audience only when the brief or source supports it; do not invent a city or service radius.
-- Draft three short hooks privately and choose the clearest. Deliver alternatives in the caption file if useful; do not stop for routine hook selection.
-- The first frame already contains the problem or result. One message per beat, with a new beat about every 2–4 seconds and a readable closing CTA.
-- Design for sound-off viewing. Default to a silent text-led Reel unless the user requests narration or music. Disclose silence. Do not claim an AI voice is a real employee.
+Choose audience, duration, aspect ratio, story shape, and sound from the brief and actual sources. 1080×1920 at 30 fps is a useful technical default for vertical delivery, not a creative formula. Do not default to 15 seconds, four scenes, a silent soundtrack, troubleshooting as every topic, or branded text slides.
 
-## Build
+Use the existing projects as examples of the rendering contract and brand assets, not as evidence of creative approval. The owner rejected the initial text videos, flickering-light guessing game, and backup-plan photo montage. Do not recycle those premises or assume adding POV, a popular song, or a pan solves the problem.
 
-Use `projects/jeff-electric-troubleshooting/` as the starting layout, preserving its original logo, local fonts, and phone-safe text placement. Create a new project and profile for a new topic; modify the existing one when revising that same video. Follow the shared rules for names and validation.
+Before building, identify the opening visual and the actual payoff, and confirm that the media can supply them. If the concept depends on action, dialogue, or a transformation, do not silently substitute unrelated stills. Find suitable authorized material, choose another supported concept, or return a concrete treatment and the smallest missing shot list when no viable version can be made.
 
-Prefer this story shape:
+## Build and review
 
-1. A recognizable question or outcome.
-2. A second symptom or a useful explanation.
-3. The relevant Jeff Electric service.
-4. One specific next action with the original logo.
+Use [copywriting](../jeff-electric-copywriter/SKILL.md) for scripts/captions and [video storytelling](../jeff-electric-video-storyteller/SKILL.md) for the edit and sound. Complete [creative review](../jeff-electric-creative-director/references/creative-review.md) before a delivery render. Make routine decisions autonomously; honor requests for a concept preview or for no stops without inventing new approval flows.
 
-Do not diagnose a particular household remotely. Avoid instructions to open panels or work on energized equipment. If using a tip, keep it general and avoid implying that a symptom proves a single cause. Do not use flashing/strobe effects to depict flickering.
+Use actual job media with appropriate context and permissions. Do not generate fake completed work, diagnoses, customer reactions, or testimonials. Avoid dangerous demonstrations or strobing. Verify before/after relationships; names and adjacent files do not prove them. Preserve the original logo and brand assets without making every organic moment an advertisement.
 
-Use actual job photos only when their intended marketing use and customer privacy are established. When unavailable, make a polished text-led creative. Never generate fake before-and-after job photos or customer testimonials.
+Sound-off comprehension is required; silence is a deliberate option, not the automatic result. Read the installed media-use skill for audio and review rights before using music. Do not pass designed effects off as site sound or an AI voice as a real worker.
 
-## Ship
+## Verify and deliver
 
-Complete the shared check → snapshot → review → preview → render → decode → playback process. Save a short `REVIEW.md` inside the project and `content/<name>.md` containing:
+Follow the shared check → visual review → preview → render → decode → playback → download verification process. Review the actual exported sequence, not only source code or sample stills. Do not call source resolution, sound quality, browser playback, or iPhone playback verified without the corresponding evidence.
 
-- Final on-screen script and timings.
-- One ready-to-copy caption, one CTA, and up to five relevant hashtags.
-- Asset/source notes, any assumptions, and whether audio is included.
-
-Provide a downloadable MP4, dimensions and duration, validation evidence, and the source commit. Posting to Instagram/Facebook is a separate action requiring the user's explicit instruction. Creating a file is not publishing a post.
-
-Example request: “Use $jeff-electric-reels to make a 15-second Jeff Electric Reel about breakers that keep tripping. Render it in the cloud and give me the MP4 and caption.”
+Save a proportionate project `REVIEW.md` and `content/<name>.md` with the final script/timings, ready-to-copy caption, appropriate CTA if any, source/rights notes, and limitations. Deliver a real downloadable MP4, duration/dimensions, actual test evidence, and source location. A failed or unexecuted render remains unfinished. Publishing is a separate action requiring explicit instruction.

@@ -1,0 +1,5 @@
+interface:
+  display_name: "Jeff Electric Copywriter"
+  short_description: "Write natural hooks, scripts, captions, and ads"
+  brand_color: "#DEAD44"
+  default_prompt: "Use $jeff-electric-copywriter to sharpen this Jeff Electric concept into a specific, natural script with a real payoff."

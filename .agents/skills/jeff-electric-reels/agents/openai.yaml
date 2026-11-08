@@ -1,0 +1,5 @@
+interface:
+  display_name: "Jeff Electric Reels Production"
+  short_description: "Render and verify a supported organic Reel"
+  brand_color: "#DEAD44"
+  default_prompt: "Use $jeff-electric-reels to produce and validate the supported Jeff Electric Reel treatment."
